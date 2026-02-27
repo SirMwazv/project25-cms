@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_navigation_submenu_items",
+    "info": {
+        "displayName": "SubmenuItem",
+        "icon": "arrowRight",
+        "description": "A submenu link within a navigation menu item"
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "path": {
+            "type": "string",
+            "required": true
+        }
+    }
+}

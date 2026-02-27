@@ -1,0 +1,36 @@
+{
+    "kind": "collectionType",
+    "collectionName": "team_members",
+    "info": {
+        "singularName": "team-member",
+        "pluralName": "team-members",
+        "displayName": "Team Member",
+        "description": "Founders and team members"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "occupation": {
+            "type": "string",
+            "required": true
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "order": {
+            "type": "integer",
+            "default": 0
+        }
+    }
+}

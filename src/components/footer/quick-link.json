@@ -1,0 +1,21 @@
+{
+    "collectionName": "components_footer_quick_links",
+    "info": {
+        "displayName": "QuickLink",
+        "icon": "link",
+        "description": "A quick navigation link in the footer"
+    },
+    "attributes": {
+        "text": {
+            "type": "string",
+            "required": true
+        },
+        "path": {
+            "type": "string",
+            "required": true
+        },
+        "className": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_initiative_breakdown_items",
+    "info": {
+        "displayName": "BreakdownItem",
+        "icon": "priceTag",
+        "description": "A spending breakdown line item"
+    },
+    "attributes": {
+        "item": {
+            "type": "string",
+            "required": true
+        },
+        "cost": {
+            "type": "decimal",
+            "required": true
+        }
+    }
+}

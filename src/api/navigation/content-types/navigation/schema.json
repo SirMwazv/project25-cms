@@ -1,0 +1,31 @@
+{
+    "kind": "singleType",
+    "collectionName": "navigations",
+    "info": {
+        "singularName": "navigation",
+        "pluralName": "navigations",
+        "displayName": "Navigation",
+        "description": "Main navigation menu structure"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "logoText": {
+            "type": "string",
+            "required": true,
+            "default": "Project"
+        },
+        "logoHighlight": {
+            "type": "string",
+            "required": true,
+            "default": "25"
+        },
+        "menuItems": {
+            "type": "component",
+            "repeatable": true,
+            "component": "navigation.menu-item"
+        }
+    }
+}

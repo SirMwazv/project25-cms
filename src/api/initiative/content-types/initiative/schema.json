@@ -1,0 +1,73 @@
+{
+    "kind": "collectionType",
+    "collectionName": "initiatives",
+    "info": {
+        "singularName": "initiative",
+        "pluralName": "initiatives",
+        "displayName": "Initiative",
+        "description": "Project initiatives (Open Tribe Foundation, Vaka Dzidzo, FeedZim)"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "title",
+            "required": true
+        },
+        "status": {
+            "type": "enumeration",
+            "enum": [
+                "Active",
+                "Completed"
+            ],
+            "required": true,
+            "default": "Active"
+        },
+        "shortDescription": {
+            "type": "string",
+            "required": true
+        },
+        "fullDescription": {
+            "type": "richtext",
+            "required": true
+        },
+        "images": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "imageTransitionTime": {
+            "type": "integer"
+        },
+        "videoUrl": {
+            "type": "string"
+        },
+        "raised": {
+            "type": "decimal"
+        },
+        "spent": {
+            "type": "decimal"
+        },
+        "nextGoal": {
+            "type": "decimal"
+        },
+        "breakdown": {
+            "type": "component",
+            "repeatable": true,
+            "component": "initiative.breakdown-item"
+        },
+        "impactMetrics": {
+            "type": "json"
+        }
+    }
+}

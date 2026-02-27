@@ -1,0 +1,29 @@
+{
+    "collectionName": "components_navigation_menu_items",
+    "info": {
+        "displayName": "MenuItem",
+        "icon": "bulletList",
+        "description": "A navigation menu item with optional submenu"
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "path": {
+            "type": "string",
+            "required": true
+        },
+        "icon": {
+            "type": "string"
+        },
+        "className": {
+            "type": "string"
+        },
+        "submenu": {
+            "type": "component",
+            "repeatable": true,
+            "component": "navigation.submenu-item"
+        }
+    }
+}
