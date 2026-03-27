@@ -16,17 +16,25 @@
             "type": "string",
             "required": true
         },
+        "slug": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true
+        },
         "occupation": {
             "type": "string",
             "required": true
         },
-        "image": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
-            "allowedTypes": [
-                "images"
-            ]
+        "bio": {
+            "type": "text"
+        },
+        "imageUrl": {
+            "type": "string",
+            "description": "Cloudflare R2 image URL"
+        },
+        "isFounder": {
+            "type": "boolean",
+            "default": true
         },
         "order": {
             "type": "integer",

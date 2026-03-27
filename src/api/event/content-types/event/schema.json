@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": "Fundraising events (BUMP ZIM, Fun Run, etc.)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "fullDescription": {
+      "type": "richtext"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "deadline": {
+      "type": "datetime"
+    },
+    "location": {
+      "type": "string"
+    },
+    "isVirtual": {
+      "type": "boolean",
+      "default": false
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "eventType": {
+      "type": "enumeration",
+      "enum": ["fundraiser", "challenge", "campaign"],
+      "default": "fundraiser"
+    },
+    "heroImage": {
+      "type": "string"
+    },
+    "textImage": {
+      "type": "string"
+    },
+    "posters": {
+      "type": "json"
+    },
+    "gallery": {
+      "type": "json"
+    },
+    "highlights": {
+      "type": "json"
+    },
+    "careBasketItems": {
+      "type": "json"
+    },
+    "howItWorks": {
+      "type": "text"
+    },
+    "hamperValue": {
+      "type": "string"
+    },
+    "registrationLink": {
+      "type": "string"
+    },
+    "pricing": {
+      "type": "json"
+    },
+    "paymentMethods": {
+      "type": "json"
+    },
+    "testimonials": {
+      "type": "json"
+    },
+    "impactMessage": {
+      "type": "string"
+    },
+    "stravaNote": {
+      "type": "string"
+    }
+  }
+}

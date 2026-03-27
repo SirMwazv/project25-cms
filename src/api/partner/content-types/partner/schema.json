@@ -16,13 +16,24 @@
             "type": "string",
             "required": true
         },
-        "logo": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
-            "allowedTypes": [
-                "images"
-            ]
+        "slug": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true
+        },
+        "logoUrl": {
+            "type": "string",
+            "description": "Cloudflare R2 or asset URL for partner logo"
+        },
+        "website": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": true
         },
         "order": {
             "type": "integer",

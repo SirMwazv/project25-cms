@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "impact_stats",
+  "info": {
+    "singularName": "impact-stat",
+    "pluralName": "impact-stats",
+    "displayName": "Impact Stat",
+    "description": "Impact statistics displayed on the initiatives page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "subtext": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
